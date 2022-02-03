@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <title>Craft Boilerplate - {{ entry.title }}</title>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="referrer" content="origin-when-cross-origin" />
+    <link rel="stylesheet" href="/css/styles.css">
+    
+    <script src="/js/lazysizes.min.js" async=""></script>
+    <link type="text/css" rel="stylesheet" href="/js/lightgallery/css/lightgallery.css" /> 
+        <link type="text/css" rel="stylesheet" href="/js/lightgallery/css/lg-zoom.css" />
+       
+             <link type="text/css" rel="stylesheet" href="/js/lightgallery/css/lg-fullscreen.css" />
+              <link type="text/css" rel="stylesheet" href="/js/lightgallery/css/lg-thumbnail.css" />
+
+</head>
+
+<body class="ltr">
+
+    {% include '_partials/_header.twig' %}
+
+    <main class="md:max-w-5xl lg:max-w-6xl mx-auto px-4 my-20 bg-white min-h-screen">
+        <div class="mx-auto mt-20 prose prose-lg prose-headings:slate-700 max-w-none prose-h1:font-normal">
+            <h1>{{ entry.title }}</h1>
+            {% if entry.markdown | length %}
+            {{ entry.markdown | markdown ('gfm') }}
+            {% endif %}
+            {% if entry.textTwoColumn | length %}
+            <div class="columns-2 mt-10 gap-8 prose-p:text-gray-600 prose-p:italic prose-p:mt-0 prose-p:mb-4">
+                
+                {{ entry.textTwoColumn | markdown ('gfm') }}
+                </div>
+                {% endif %}
+            <hr class="mb-10 text-gray-800">
+     
+
+        <div class="mb-20 mx-auto">
+
+
+
+
+
+
+
+            {% for block in entry.gallery.all() %}
+            {% switch block.type %}
+
+            {% case "gallery" %}
+         
+
+            <div class="md:grid grid-cols-3 gap-6" id="lightgallery">
+           
+           
+            {% for galleryImages in block.galleryImages.all() %}
+           
+    
+            <a href="{{ galleryImages.url }}"  >
+        <picture>
+            <source srcset="{{ galleryImages.optimizedGalleryImage.srcsetWebP() }}" 
+                     sizes="100vw"
+                     type="image/webp" />
+                    
+            <img src="{{ galleryImages.optimizedGalleryImage.src() }}"
+                 srcset="{{ galleryImages.optimizedGalleryImage.srcset() }}"
+                 sizes="100vw" 
+                 class="shadow-xl rounded" />
+                 
+         </picture>
+</a>
+      
+         {% endfor %}
+            </div>
+            {% default %}
+            ...
+
+            {% endswitch %}
+            {% endfor %}
+
+
+
+    </main>
+    {% include '_partials/_footer.twig' %}
+  
+    <script src="/js/lightgallery/lightgallery.min.js"></script>
+                				<script src="/js/lightgallery/plugins/zoom/lg-zoom.umd.js"></script>
+								
+									<script src="/js/lightgallery/plugins/fullscreen/lg-fullscreen.umd.js"></script>
+									<script src="/js/lightgallery/plugins/thumbnail/lg-thumbnail.umd.js"></script>
+
+        			<script type="text/javascript">
+			lightGallery(document.getElementById("lightgallery"), {
+  speed: 500,
+  plugins: [lgZoom,lgFullscreen,lgThumbnail],
+  showZoomInOutIcons: true,
+  actualSize: true,
+  zoom: true,
+  thumbMargin: 20,
+  thumbHeight: 60,
+  thumbWidth: 60,
+  download: true,
+  actualSizeIcons: { zoomIn: 'lg-actual-size', zoomOut: 'lg-zoom-out' }
+});
+
+  
+
+			</script>
+</body>
+
+</html>

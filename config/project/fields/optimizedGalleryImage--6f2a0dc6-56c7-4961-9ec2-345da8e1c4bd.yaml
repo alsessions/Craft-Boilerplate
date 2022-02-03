@@ -1,0 +1,44 @@
+columnSuffix: hcuegzjl
+contentColumnType: text
+fieldGroup: 8d6f1019-1e9f-41ca-8b21-c587939c7123 # Photos
+handle: optimizedGalleryImage
+instructions: ''
+name: 'Optimized Gallery Image'
+searchable: false
+settings:
+  displayDominantColorPalette: '1'
+  displayLazyLoadPlaceholderImages: '1'
+  displayOptimizedImageVariants: '1'
+  fieldVolumeSettings:
+    __assoc__:
+      -
+        - photos
+        - '*'
+  variants:
+    -
+      __assoc__:
+        -
+          - width
+          - '576'
+        -
+          - useAspectRatio
+          - '1'
+        -
+          - aspectRatioX
+          - '1'
+        -
+          - aspectRatioY
+          - '1'
+        -
+          - retinaSizes
+          -
+            - '1'
+        -
+          - quality
+          - '82'
+        -
+          - format
+          - jpg
+translationKeyFormat: null
+translationMethod: none
+type: nystudio107\imageoptimize\fields\OptimizedImages

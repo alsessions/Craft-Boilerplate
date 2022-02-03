@@ -1,0 +1,84 @@
+field: 8f96e12f-89ce-4356-8d16-627a03ce664b # Gallery Matrix
+fieldLayouts:
+  4370d7c1-0155-4c71-99dd-301ccd07c7b6:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: d528e0c8-e295-451b-932e-41716e42ef5a # Gallery Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: daabfca9-958d-45f0-8de9-3df436ec424e # Gallery Images
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  d528e0c8-e295-451b-932e-41716e42ef5a: # Gallery Title
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: galleryTitle
+    instructions: ''
+    name: 'Gallery Title'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  daabfca9-958d-45f0-8de9-3df436ec424e: # Gallery Images
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: galleryImages
+    instructions: ''
+    name: 'Gallery Images'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowUploads: true
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:016fab9a-3b2e-43aa-98ff-eec3b1a422b5' # Photos
+      defaultUploadLocationSubpath: ''
+      limit: ''
+      localizeRelations: false
+      previewMode: full
+      restrictFiles: ''
+      selectionLabel: ''
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:801d01c6-aa54-4d3a-8270-8d66b741bc84' # Images
+      singleUploadLocationSubpath: ''
+      source: null
+      sources:
+        - 'volume:016fab9a-3b2e-43aa-98ff-eec3b1a422b5' # Photos
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+handle: gallery
+name: Gallery
+sortOrder: 1

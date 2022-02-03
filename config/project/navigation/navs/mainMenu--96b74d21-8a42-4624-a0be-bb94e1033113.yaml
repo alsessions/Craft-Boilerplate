@@ -1,0 +1,28 @@
+handle: mainMenu
+instructions: ''
+maxNodes: ''
+name: 'Main Menu'
+permissions:
+  craft\elements\Asset:
+    enabled: '1'
+    permissions: '*'
+  craft\elements\Category:
+    enabled: '1'
+    permissions: '*'
+  craft\elements\Entry:
+    enabled: '1'
+    permissions: '*'
+  craft\elements\Tag:
+    enabled: ''
+    permissions: '*'
+  custom:
+    enabled: '1'
+  verbb\navigation\nodetypes\PassiveType:
+    enabled: '1'
+propagateNodes: false
+siteSettings:
+  bf4a1251-9e93-4e63-8309-a16809036706: null # Craft Boilerplate
+sortOrder: 1
+structure:
+  maxLevels: null
+  uid: 17b3e446-fdac-4ecc-9212-9c5fc49c34ca

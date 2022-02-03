@@ -1,0 +1,33 @@
+<header class="w-full bg-gray-50 py-6">
+    <div class="max-w-8xl mx-auto px-4">
+        <div class="flex flex-wrap justify-between items-center">
+        <h1 class="text-3xl md:text-4xl font-medium text-gray-900"><a href="/">{{ siteName }}</a></h1>
+        <div class="flex">
+            {{ craft.navigation.render('mainMenu', {
+                ulClass: 'inline-block',
+                liClass: 'inline inline-block ml-6 uppercase text-lg text-gray-700',
+                aClass: ' hover:border-b-2 border-gray-700',
+                activeClass: 'text-gray-400 border-b-4 border-gray-400',
+                ulAttributes: {
+                    'data-attr': 'Some value',
+                },
+                liAttributes: {
+                    'data-attr': 'Some value',
+                },
+                aAttributes: {
+                    'data-attr': 'Some value',
+                },
+            }) }}
+            
+    
+
+
+
+
+
+        </div>
+
+        </div>
+
+    </div>
+</header>

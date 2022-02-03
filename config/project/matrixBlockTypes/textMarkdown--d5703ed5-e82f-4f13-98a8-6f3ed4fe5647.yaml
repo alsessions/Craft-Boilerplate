@@ -1,0 +1,41 @@
+field: d2a5ba19-a932-4f42-81be-b505cf4c47fa # Page Builder
+fieldLayouts:
+  cface808-1da1-442f-b156-aa10975f3cc1:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: a8e41503-5109-4d4f-be9d-ad9be3ee288b # Text Markdown
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  a8e41503-5109-4d4f-be9d-ad9be3ee288b: # Text Markdown
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: textMarkdown
+    instructions: ''
+    name: 'Text Markdown'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: '1'
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: textMarkdown
+name: 'Text Markdown'
+sortOrder: 1

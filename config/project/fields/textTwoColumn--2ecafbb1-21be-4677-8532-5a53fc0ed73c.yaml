@@ -1,0 +1,19 @@
+columnSuffix: tkearlsd
+contentColumnType: text
+fieldGroup: 82e9651c-cdbe-4765-8347-e523862e8fc0 # Common
+handle: textTwoColumn
+instructions: 'Columns will be split evenly. Markdown is enabled.'
+name: 'Text (two column)'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: '1'
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

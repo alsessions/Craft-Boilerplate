@@ -1,0 +1,70 @@
+field: d2a5ba19-a932-4f42-81be-b505cf4c47fa # Page Builder
+fieldLayouts:
+  b32d8b90-7b76-4aa6-9629-63ff72952874:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 49d93205-bf01-4993-9476-5244792f13ab # Column Header Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: c357f363-cd0d-42d3-97db-feee6d33a11a # Two Columns
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  49d93205-bf01-4993-9476-5244792f13ab: # Column Header Text
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: columnHeaderText
+    instructions: 'Markdown field, full width above columns.'
+    name: 'Column Header Text'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: '1'
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  c357f363-cd0d-42d3-97db-feee6d33a11a: # Two Columns
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: twoColumns
+    instructions: 'Markdown formatted. Content will be split evenly.'
+    name: 'Two Columns'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: '1'
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: twoColumns
+name: 'Two columns'
+sortOrder: 6

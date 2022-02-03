@@ -1,0 +1,15 @@
+defaultPlacement: end
+enableVersioning: true
+handle: pages
+name: Pages
+propagationMethod: all
+siteSettings:
+  bf4a1251-9e93-4e63-8309-a16809036706: # Craft Boilerplate
+    enabledByDefault: true
+    hasUrls: true
+    template: _partials/_layout.twig
+    uriFormat: '{slug}'
+structure:
+  maxLevels: null
+  uid: 2b3d2f50-1f37-4559-a09e-92856cbd13c1
+type: structure

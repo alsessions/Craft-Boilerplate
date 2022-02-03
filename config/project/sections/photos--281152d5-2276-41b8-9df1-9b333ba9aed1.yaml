@@ -1,0 +1,15 @@
+defaultPlacement: beginning
+enableVersioning: true
+handle: photos
+name: Photos
+propagationMethod: all
+siteSettings:
+  bf4a1251-9e93-4e63-8309-a16809036706: # Craft Boilerplate
+    enabledByDefault: true
+    hasUrls: true
+    template: photos/_entry
+    uriFormat: 'photos/{slug}'
+structure:
+  maxLevels: null
+  uid: 5b13c419-02b9-4be6-bbab-8b4bf3cd4b59
+type: structure

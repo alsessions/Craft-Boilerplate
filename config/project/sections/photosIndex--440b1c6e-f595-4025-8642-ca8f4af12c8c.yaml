@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: photosIndex
+name: 'Photos Index'
+propagationMethod: all
+siteSettings:
+  bf4a1251-9e93-4e63-8309-a16809036706: # Craft Boilerplate
+    enabledByDefault: true
+    hasUrls: true
+    template: photos/index.twig
+    uriFormat: photos
+type: single

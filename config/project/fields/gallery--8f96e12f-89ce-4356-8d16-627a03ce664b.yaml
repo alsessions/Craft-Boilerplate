@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 8d6f1019-1e9f-41ca-8b21-c587939c7123 # Photos
+handle: gallery
+instructions: ''
+name: 'Gallery Matrix'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_gallery}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

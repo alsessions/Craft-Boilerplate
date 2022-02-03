@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <title>Craft Boilerplate - {{ entry.title }}</title>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="referrer" content="origin-when-cross-origin" />
+    <link rel="stylesheet" href="/css/styles.css">
+
+</head>
+
+<body class="ltr">
+
+    {% include '_partials/_header.twig' %}
+
+    <main class="md:max-w-5xl lg:max-w-6xl mx-auto px-4 my-20 bg-white min-h-screen">
+        <div class="mx-auto mt-20 prose prose-lg  prose-headings:slate-700 max-w-none prose-h1:font-normal">
+            <h1>{{ entry.title }}</h1>
+            <p>{{ entry.markdown | markdown ('gfm') }}</p>
+            <hr class="mb-10 text-gray-800">
+     
+
+        {# Create an entry query with the 'section' and 'limit' parameters #}
+        {% set galleryList = craft.entries()
+          .section('photos')
+          .limit(10) %}
+        
+        {# Fetch the entries #}
+        {% set entries = galleryList.all() %}
+        
+        {# Display the entries #}
+        {% for entry in entries %}
+       
+            <h3><a href="{{ entry.url }}">{{ entry.title }}</a></h3>
+      
+        {% endfor %}
+        
+
+
+
+    </main>
+    {% include '_partials/_footer.twig' %}
+
+</body>
+
+</html>

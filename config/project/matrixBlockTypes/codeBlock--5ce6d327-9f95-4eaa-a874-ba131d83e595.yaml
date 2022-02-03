@@ -1,0 +1,32 @@
+field: d2a5ba19-a932-4f42-81be-b505cf4c47fa # Page Builder
+fieldLayouts:
+  d103aff6-8a27-428c-9e57-3b8714cbf1c1:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 6c844d76-9e89-471a-9a4c-4aecb2870128 # Code Block
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  6c844d76-9e89-471a-9a4c-4aecb2870128: # Code Block
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: codeBlock
+    instructions: ''
+    name: 'Code Block'
+    searchable: false
+    translationKeyFormat: null
+    translationMethod: none
+    type: hashtagerrors\syntaxhighlighter\fields\SyntaxHighlighterField
+handle: codeBlock
+name: 'Code Block'
+sortOrder: 2

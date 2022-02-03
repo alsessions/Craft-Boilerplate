@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+    .code-container.language-markup, pre {
+        @apply md:rounded-lg my-10 whitespace-pre-wrap ;
+    }
