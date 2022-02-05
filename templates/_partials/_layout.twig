@@ -134,6 +134,50 @@
 
         </div>
 
+        <div class="mb-20 mx-auto">
+
+
+
+
+{% if entry.gallery | length %}
+
+
+            {% for block in entry.gallery.all() %}
+            {% switch block.type %}
+
+            {% case "gallery" %}
+         
+
+            <div class="md:grid grid-cols-3 gap-6" id="lightgallery">
+           
+           
+            {% for galleryImages in block.galleryImages.all() %}
+           
+    
+            <a href="{{ galleryImages.url }}"  >
+        <picture>
+            <source srcset="{{ galleryImages.optimizedGalleryImage.srcsetWebP() }}" 
+                     sizes="100vw"
+                     type="image/webp" />
+                    
+            <img src="{{ galleryImages.optimizedGalleryImage.src() }}"
+                 srcset="{{ galleryImages.optimizedGalleryImage.srcset() }}"
+                 sizes="100vw" 
+                 class="shadow-xl rounded" />
+                 
+         </picture>
+</a>
+      
+         {% endfor %}
+            </div>
+            {% default %}
+            ...
+
+            {% endswitch %}
+            {% endfor %}
+
+{% endif %}
+
 
 
     </main>

@@ -1,4 +1,4 @@
-dateModified: 1643906562
+dateModified: 1644092262
 email:
   fromEmail: fultonchain@gmail.com
   fromName: 'Craft Testing'
@@ -138,7 +138,7 @@ plugins:
       selectedTheme: prism-okaidia
       showLanguage: ''
 system:
-  edition: solo
+  edition: pro
   live: true
   name: 'Craft Testing'
   retryDuration: null

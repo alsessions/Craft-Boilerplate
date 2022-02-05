@@ -1232,10 +1232,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 1.5rem;
 }
 
-.gap-4 {
-  gap: 1rem;
-}
-
 .gap-8 {
   gap: 2rem;
 }
@@ -1383,6 +1379,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
+.text-teal-800 {
+  --tw-text-opacity: 1;
+  color: rgb(17 94 89 / var(--tw-text-opacity));
+}
+
 .shadow-xl {
   --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
@@ -1399,6 +1400,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   .code-container.language-markup, pre {
     border-radius: 0.5rem;
   }
+}
+
+.lg-outer .lg-thumb-item {
+  border-radius: 2px;
+  border: 1px solid #ddd !important;
 }
 
 .hover\:border-b-2:hover {
@@ -1434,14 +1440,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(71 85 105 / var(--tw-text-opacity));
 }
 
-.prose-p\:text-red-500 :is(:where(p):not(:where([class~="not-prose"] *))) {
-  --tw-text-opacity: 1;
-  color: rgb(239 68 68 / var(--tw-text-opacity));
-}
-
 .prose-p\:text-gray-600 :is(:where(p):not(:where([class~="not-prose"] *))) {
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+
+.prose-p\:text-slate-700 :is(:where(p):not(:where([class~="not-prose"] *))) {
+  --tw-text-opacity: 1;
+  color: rgb(51 65 85 / var(--tw-text-opacity));
 }
 
 .prose-pre\:whitespace-pre-wrap :is(:where(pre):not(:where([class~="not-prose"] *))) {
@@ -1461,6 +1467,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     display: grid;
   }
 
+  .md\:max-w-4xl {
+    max-width: 56rem;
+  }
+
   .md\:max-w-5xl {
     max-width: 64rem;
   }
@@ -1478,10 +1488,21 @@ Ensure the default browser behavior of the `hidden` attribute.
     font-size: 2.25rem;
     line-height: 2.5rem;
   }
+
+  .md\:prose-pre\:mx-10 :is(:where(pre):not(:where([class~="not-prose"] *))) {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
 }
 
 @media (min-width: 1024px) {
+  .lg\:max-w-5xl {
+    max-width: 64rem;
+  }
+
   .lg\:max-w-6xl {
     max-width: 72rem;
   }
 }
+
+

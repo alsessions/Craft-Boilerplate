@@ -7,3 +7,10 @@
     .code-container.language-markup, pre {
         @apply md:rounded-lg my-10 whitespace-pre-wrap ;
     }
+
+    .lg-outer .lg-thumb-item {
+        border-radius: 2px;
+        border: 1px solid #ddd !important;
+    }
+
+
