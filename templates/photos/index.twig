@@ -17,7 +17,7 @@
     {% include '_partials/_header.twig' %}
 
     <main class="md:max-w-5xl lg:max-w-6xl mx-auto px-4 my-20 bg-white min-h-screen">
-        <div class="mx-auto mt-20 prose prose-lg  prose-headings:slate-700 max-w-none prose-h1:font-normal">
+        <div class="mx-auto mt-20 prose prose-lg px-4 prose-headings:slate-700  prose-h1:font-normal max-w-none">
             <h1>{{ entry.title }}</h1>
             <p>{{ entry.markdown | markdown ('gfm') }}</p>
             <hr class="mb-10 text-gray-800">

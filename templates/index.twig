@@ -16,7 +16,7 @@
 
     {% include '_partials/_header.twig' %}
 
-    <main class="md:max-w-4xl lg:max-w-5xl mx-auto px-4 my-20 bg-white">
+    <main class="md:max-w-5xl lg:max-w-6xl mx-auto px-4 my-20 bg-white">
         <div class="mx-auto mt-20 prose prose-lg px-4 prose-headings:slate-700 max-w-none prose-headings:font-normal">
             <h1>{{ entry.title }}</h1>
             <p>{{ entry.markdown | markdown ('gfm') }}</p>
@@ -118,7 +118,6 @@
             {% endfor %}
    </div>
 
-     {# PurgeCSS: flex animate-spin justify-center col-start-2 row-start-2 h-12 w-12 text-indigo-700 #}
 
 
 
